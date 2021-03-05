@@ -1,0 +1,73 @@
+@media only screen and (max-device-width: 900px) {
+    /*.section{width:600px;}*/
+}
+
+@media only screen and (max-device-width: 720px) {
+    /*.section{width:1600px;}*/
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Lato', Ariel, sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    background: white;
+}
+
+div {
+    max-height: 25rem;
+}
+
+#logo {
+    width: 25rem;
+    height: auto;
+    margin-left: -12rem;
+    display: flex;
+}
+
+.btnInstagram {
+    position: relative;
+    top: -15rem;
+    margin-left: 47rem;
+    display: flex;
+    padding: 0rem;
+    background: none;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+}
+
+.btnZap {
+    position: relative;
+    top: -21rem;
+    margin-left: 32rem;
+    display: flex;
+    padding: 0rem;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    background: none;
+}
+
+.btnIfood {
+    position: relative;
+    top: -28.5rem;
+    margin-left: 17rem;
+    display: flex;
+    padding: 0rem;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    background: none;
+}
