@@ -4,31 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
     <title>Brownie do Sam</title>
 </head>
 
 <body>
-    <div>
-        <div>
-            <img id="logo" src="fotos/logo.png" alt="logo">
-            <button class="btnInstagram" onclick="window.location.href = 'https://www.instagram.com/brownie_do_sam/'">
-                <img src="fotos/instagram_bw.png"
-                onMouseOver="this.src='fotos/instagram_color.png'"
-                onMouseOut="this.src='fotos/instagram_bw.png'"
-                onClick="this.src='fotos/instagram_color.png'"
-            </button>
-            <button class="btnZap" onclick="window.location.href='https://api.whatsapp.com/send?phone=5585987119894'">
-                <img src="fotos/whatsapp_bw.png"
-                onMouseOver="this.src='fotos/whatsapp_color.png'"
-                onMouseOut="this.src='fotos/whatsapp_bw.png'"
-                onClick="this.src='fotos/whatsapp_color.png'"
-            </button>
-            <button class="btnIfood">
-                <img src="fotos/ifood.png" alt="ifood">
-            </button>
-        </div>
+    <div class="container">
+        <img id="logo" src="fotos/logo.png" alt="logo">
+        <button class="btnInstagram" onclick="window.location.href = 'https://www.instagram.com/brownie_do_sam/'">
+            <img id="imgInsta" src="fotos/instagram_bw.png"
+            onMouseOver="this.src='fotos/instagram_color.png'"
+            onMouseOut="this.src='fotos/instagram_bw.png'"
+            onClick="this.src='fotos/instagram_color.png'"
+        </button>
+        <button class="btnZap" onclick="window.location.href='https://api.whatsapp.com/send?phone=5585987119894'">
+            <img id= "imgZap" src="fotos/whatsapp_bw.png"
+            onMouseOver="this.src='fotos/whatsapp_color.png'"
+            onMouseOut="this.src='fotos/whatsapp_bw.png'"
+            onClick="this.src='fotos/whatsapp_color.png'"
+        </button>
+        <button class="btnIfood">
+            <img id="imgIfood" src="fotos/ifood.png" alt="ifood">
+        </button>
     </div>
     <div class="menu">
         <button class="btnInicio">INICIO</button>
@@ -38,12 +36,11 @@
     <div class="slide">
         <img class="foto" src="fotos/brownie1.jpg" />
         <img class="foto" src="fotos/brownie2.jpg" />
-        <img class="foto" src="fotos/brownie3.jpg" />
     </div>
     <div class="produtos">
-        <div class="p1"><img src="fotos/brownie1.jpg"></div>
-        <div class="p2"><img src="fotos/brownie2.jpg"></div>
-        <div class="p3"><img src="fotos/brownie3.jpg"></div>
+        <img class="p1" src="fotos/brownie1.jpg">
+        <img class="p2" src="fotos/brownie2.jpg">
+        <img class="p3" src="fotos/brownie3.jpg">
     </div>
     <div class=contatos>
         <div class="pontosVenda">Loja 1 <br>(85) 9999999</div>

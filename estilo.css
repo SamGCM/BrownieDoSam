@@ -2,67 +2,81 @@ html {
     font-family: 'Lato', Ariel, sans-serif;
     background: #f5f4f4;
     height: 65em;
+    font-size: 62.5%;
+    /* USEI O FONT-SIZE COMO FORMA DE RESPONSIVIDADE PARA TELAS BEM 
+     MENORES PARA QUE OS ICONES NÃO FICASSEM COLADOS */
 }
 
 body {
-    font-size: 62.5%;
-    height: 103em;
+    height: 100vh;
+    text-rendering: optimizeLegibility;
+    font-size: 1.6rem;
 }
 
-div {
-    max-width: 960px;
-    margin: 2em auto;
-}
-
-@media screen and (min-width: 600px) {
-    div {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 5%;
-    }
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
 }
 
 #logo {
-    width: 15em;
+    width: 15rem;
     height: auto;
-    margin-left: 0em;
     display: flex;
 }
 
 .btnInstagram {
     position: relative;
-    top: -8em;
-    margin-left: 30em;
     display: flex;
     padding: 0rem;
     background: none;
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: none;
+    cursor: pointer;
+}
+
+#imgInsta {
+    width: 5rem;
+    height: auto;
+    display: flex;
 }
 
 .btnZap {
     position: relative;
-    top: -13em;
-    margin-left: 22em;
     display: flex;
     padding: 0rem;
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: none;
     background: none;
+    cursor: pointer;
+}
+
+#imgZap {
+    width: 5rem;
+    height: auto;
+    display: flex;
 }
 
 .btnIfood {
     position: relative;
-    top: -18.5em;
-    margin-left: 13em;
     display: flex;
     padding: 0rem;
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: none;
     background: none;
+    cursor: pointer;
+}
+
+#imgIfood {
+    width: 6rem;
+    height: auto;
+    display: flex;
 }
 
 
@@ -70,13 +84,13 @@ div {
 
 .menu {
     background: none;
-    margin-top: -8em;
-    margin-left: -2em;
     display: flex;
-    position: relative;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 590px;
+    margin: auto;
+    padding: 1.4rem;
 }
 
 .btnInicio {
@@ -86,10 +100,11 @@ div {
     border: 0 none;
     outline: none;
     background: none;
-    font-size: 1.5em;
+    font-size: 1.6rem;
     letter-spacing: 1px;
-    margin-left: 2.5em;
     color: #D1260B;
+    cursor: pointer;
+    margin-left: 5%;
 }
 
 .btnInicio:hover {
@@ -103,10 +118,10 @@ div {
     border: 0 none;
     outline: none;
     background: none;
-    font-size: 1.5em;
+    font-size: 1.6rem;
     letter-spacing: 1px;
-    margin-left: 2.5em;
     color: #D1260B;
+    cursor: pointer;
 }
 
 .btnProdutos:hover {
@@ -120,10 +135,10 @@ div {
     border: 0 none;
     outline: none;
     background: none;
-    font-size: 1.5em;
+    font-size: 1.6rem;
     letter-spacing: 1px;
-    margin-left: 3em;
     color: #D1260B;
+    cursor: pointer;
 }
 
 .btnContatos:hover {
@@ -134,27 +149,25 @@ div {
 /* SLIDE DE FOTOS*/
 
 .slide {
-    display: flex;
-    margin: 100%;
-    width: 38em;
-    height: 32em;
-    position: relative;
-    overflow: hidden;
-    margin-top: 0em;
-    margin-left: 1em;
-    visibility: hidden;
+    display: absolute;
+    align-items: center;
+    width: 90%;
+    height: 35vh;
+    max-width: 600px;
+    margin: auto;
 }
 
 .foto {
-    visibility: visible;
     position: absolute;
     overflow: hidden;
     opacity: 0;
     animation-name: animacao;
     animation-duration: 10s;
-    animation-iteration-count: initial;
-    display: flex;
-    max-width: 100%;
+    animation-iteration-count: infinite;
+    width: 90%;
+    max-width: 630px;
+    max-height: 400px;
+    margin: auto;
 }
 
 @keyframes animacao {
@@ -171,40 +184,30 @@ div {
 }
 
 .foto:nth-child(2) {
-    animation-delay: 4s;
-}
-
-.foto:nth-child(3) {
-    animation-delay: 8s;
+    animation-delay: 5s;
 }
 
 
 /* PRODUTOS */
 
 .produtos {
-    position: relative;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
     display: grid;
-    grid-template-rows: repeat(1, 1);
-    row-gap: 2em;
-    top: -70em;
-    margin-left: -1em;
-    padding: 2em;
-    visibility: hidden;
-    align-items: center;
-    justify-content: center;
-    background: #f5f4f4;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    column-gap: 20px;
+    row-gap: 25px;
 }
 
 .p1 {
     display: flex;
-    width: 38em;
-    height: 32em;
-    position: relative;
     box-shadow: 0 0 1em #999999d7;
-    box-sizing: border-box;
-    flex-direction: column;
     cursor: pointer;
-    margin-left: 1em;
+    width: 90%;
+    max-width: 30rem;
+    height: auto;
+    margin: auto;
 }
 
 .p1:hover {
@@ -213,14 +216,12 @@ div {
 
 .p2 {
     display: flex;
-    width: 38em;
-    height: 32em;
-    position: relative;
     box-shadow: 0 0 1em #999999d7;
-    box-sizing: border-box;
-    flex-direction: column;
-    margin-left: 1em;
     cursor: pointer;
+    width: 90%;
+    max-width: 30rem;
+    height: auto;
+    margin: auto;
 }
 
 .p2:hover {
@@ -229,14 +230,12 @@ div {
 
 .p3 {
     display: flex;
-    width: 38em;
-    height: 32em;
-    position: relative;
     box-shadow: 0 0 1em #999999d7;
-    flex-direction: column;
-    box-sizing: border-box;
     cursor: pointer;
-    margin-left: 1em;
+    width: 83%;
+    max-width: 30rem;
+    height: auto;
+    margin: auto;
 }
 
 .p3:hover {
@@ -244,19 +243,18 @@ div {
 }
 
 .contatos {
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(2, 8em);
-    row-gap: 3em;
-    padding: 30px 15px;
-    margin-top: -66em;
-    margin-left: 0em;
-    padding: 8em;
-    visibility: visible;
-    font-size: 15px;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
 }
 
 .pontosVenda {
-    margin-left: -1em;
-    margin-top: -5em;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+@media(max-width: 361px) {
+    html {
+        font-size: 50.5%;
+    }
 }
