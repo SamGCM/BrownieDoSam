@@ -1,45 +1,38 @@
-@media only screen and (max-device-width: 900px) {
-    /*.section{width:600px;}*/
-}
-
-@media only screen and (max-device-width: 720px) {
-    /*.section{width:1600px;}*/
-}
-
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
 html {
-    font-size: 10px;
     font-family: 'Lato', Ariel, sans-serif;
+    background: #f5f4f4;
+    height: 65em;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    justify-content: center;
-    background: white;
+body {
+    font-size: 62.5%;
+    height: 103em;
 }
 
 div {
-    max-height: 25rem;
+    max-width: 960px;
+    margin: 2em auto;
+}
+
+@media screen and (min-width: 600px) {
+    div {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 5%;
+    }
 }
 
 #logo {
-    width: 25rem;
+    width: 15em;
     height: auto;
-    margin-left: -12rem;
+    margin-left: 0em;
     display: flex;
 }
 
 .btnInstagram {
     position: relative;
-    top: -15rem;
-    margin-left: 47rem;
+    top: -8em;
+    margin-left: 30em;
     display: flex;
     padding: 0rem;
     background: none;
@@ -50,8 +43,8 @@ div {
 
 .btnZap {
     position: relative;
-    top: -21rem;
-    margin-left: 32rem;
+    top: -13em;
+    margin-left: 22em;
     display: flex;
     padding: 0rem;
     box-shadow: 0 0 0 0;
@@ -62,12 +55,208 @@ div {
 
 .btnIfood {
     position: relative;
-    top: -28.5rem;
-    margin-left: 17rem;
+    top: -18.5em;
+    margin-left: 13em;
     display: flex;
     padding: 0rem;
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: none;
     background: none;
+}
+
+
+/* MENU*/
+
+.menu {
+    background: none;
+    margin-top: -8em;
+    margin-left: -2em;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnInicio {
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    background: none;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    margin-left: 2.5em;
+    color: #D1260B;
+}
+
+.btnInicio:hover {
+    font-weight: bold;
+}
+
+.btnProdutos {
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    background: none;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    margin-left: 2.5em;
+    color: #D1260B;
+}
+
+.btnProdutos:hover {
+    font-weight: bold;
+}
+
+.btnContatos {
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    background: none;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    margin-left: 3em;
+    color: #D1260B;
+}
+
+.btnContatos:hover {
+    font-weight: bold;
+}
+
+
+/* SLIDE DE FOTOS*/
+
+.slide {
+    display: flex;
+    margin: 100%;
+    width: 38em;
+    height: 32em;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0em;
+    margin-left: 1em;
+    visibility: hidden;
+}
+
+.foto {
+    visibility: visible;
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 10s;
+    animation-iteration-count: initial;
+    display: flex;
+    max-width: 100%;
+}
+
+@keyframes animacao {
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.foto:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.foto:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.foto:nth-child(3) {
+    animation-delay: 8s;
+}
+
+
+/* PRODUTOS */
+
+.produtos {
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(1, 1);
+    row-gap: 2em;
+    top: -70em;
+    margin-left: -1em;
+    padding: 2em;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    background: #f5f4f4;
+}
+
+.p1 {
+    display: flex;
+    width: 38em;
+    height: 32em;
+    position: relative;
+    box-shadow: 0 0 1em #999999d7;
+    box-sizing: border-box;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+.p1:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.p2 {
+    display: flex;
+    width: 38em;
+    height: 32em;
+    position: relative;
+    box-shadow: 0 0 1em #999999d7;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.p2:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.p3 {
+    display: flex;
+    width: 38em;
+    height: 32em;
+    position: relative;
+    box-shadow: 0 0 1em #999999d7;
+    flex-direction: column;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+.p3:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.contatos {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 8em);
+    row-gap: 3em;
+    padding: 30px 15px;
+    margin-top: -66em;
+    margin-left: 0em;
+    padding: 8em;
+    visibility: visible;
+    font-size: 15px;
+}
+
+.pontosVenda {
+    margin-left: -1em;
+    margin-top: -5em;
 }
