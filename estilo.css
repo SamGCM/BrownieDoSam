@@ -8,9 +8,9 @@ html {
 }
 
 body {
-    height: 100vh;
     text-rendering: optimizeLegibility;
     font-size: 1.6rem;
+    padding-bottom: 3rem;
 }
 
 .container {
@@ -90,7 +90,7 @@ body {
     width: 90%;
     max-width: 590px;
     margin: auto;
-    padding: 1.4rem;
+    padding: 3rem;
 }
 
 .btnInicio {
@@ -196,50 +196,39 @@ body {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
-    column-gap: 20px;
-    row-gap: 25px;
+    column-gap: 50px;
+    row-gap: 60px;
 }
 
-.p1 {
+.containerProduto {
     display: flex;
-    box-shadow: 0 0 1em #999999d7;
-    cursor: pointer;
-    width: 90%;
+    width: 100%;
     max-width: 30rem;
     height: auto;
     margin: auto;
-}
-
-.p1:hover {
-    transform: scale(1.1, 1.1);
-}
-
-.p2 {
-    display: flex;
-    box-shadow: 0 0 1em #999999d7;
+    overflow: hidden;
+    border-radius: 20px;
     cursor: pointer;
-    width: 90%;
-    max-width: 30rem;
-    height: auto;
-    margin: auto;
 }
 
-.p2:hover {
-    transform: scale(1.1, 1.1);
+figcaption {
+    background-color: white;
+    color: black;
+    text-align: center;
 }
 
-.p3 {
+figure {
     display: flex;
-    box-shadow: 0 0 1em #999999d7;
-    cursor: pointer;
-    width: 83%;
-    max-width: 30rem;
-    height: auto;
+    flex-flow: column;
+    max-width: 220px;
     margin: auto;
+    border: 0.1px solid rgb(167, 167, 167);
+    border-radius: 20px;
 }
 
-.p3:hover {
+.containerProduto:hover {
     transform: scale(1.1, 1.1);
+    box-shadow: 0 0 2em #999999d7;
 }
 
 .contatos {

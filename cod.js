@@ -11,7 +11,9 @@ foto.style.display = "block";
 
 btnProdutos.addEventListener('click', abrirProdutos);
 btnInicio.addEventListener('click', abrirInicio);
-btnContatos.addEventListener('click', abrirContatos)
+btnContatos.addEventListener('click', abrirContatos);
+produto1.addEventListener('click', mostrar);
+
 
 function abrirProdutos() {
     contatos.style.display = "none";
