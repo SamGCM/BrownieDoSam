@@ -79,6 +79,27 @@ body {
     display: flex;
 }
 
+.btnCarrinho {
+    position: relative;
+    display: flex;
+    padding: 0rem;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+#imgCarrinho {
+    width: 6rem;
+    height: auto;
+}
+
+#imgCarrinhoCheio {
+    width: 6rem;
+    height: auto;
+}
+
 
 /* MENU*/
 
@@ -208,10 +229,10 @@ body {
     margin: auto;
     overflow: hidden;
     border-radius: 20px;
-    cursor: pointer;
 }
 
 figcaption {
+    font-weight: bold;
     background-color: white;
     color: black;
     text-align: center;
@@ -228,7 +249,19 @@ figure {
 
 .containerProduto:hover {
     transform: scale(1.1, 1.1);
-    box-shadow: 0 0 2em #999999d7;
+    box-shadow: 0 0 1em #999999d7;
+}
+
+.btnComprar {
+    position: relative;
+    box-shadow: 0 0 0 0;
+    border: 2px solid #FFD333;
+    border-radius: 10px;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .contatos {
@@ -242,8 +275,20 @@ figure {
     line-height: 2.5rem;
 }
 
+@media(max-width: 523px) {
+    html {
+        font-size: 60.5%;
+    }
+}
+
+@media(max-width: 500px) {
+    html {
+        font-size: 55.5%;
+    }
+}
+
 @media(max-width: 361px) {
     html {
-        font-size: 50.5%;
+        font-size: 43.5%;
     }
 }
