@@ -1,16 +1,15 @@
 html {
     font-family: 'Lato', Ariel, sans-serif;
     background: #f5f4f4;
-    height: 65em;
+    height: 100%;
     font-size: 62.5%;
     /* USEI O FONT-SIZE COMO FORMA DE RESPONSIVIDADE PARA TELAS BEM 
      MENORES PARA QUE OS ICONES NÃO FICASSEM COLADOS */
 }
 
 body {
-    text-rendering: optimizeLegibility;
+    max-height: 100%;
     font-size: 1.6rem;
-    padding-bottom: 3rem;
 }
 
 .container {
@@ -75,23 +74,6 @@ body {
 
 #imgIfood {
     width: 6rem;
-    height: auto;
-    display: flex;
-}
-
-.btnCarrinho {
-    position: relative;
-    display: flex;
-    padding: 0rem;
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: none;
-    background: none;
-    cursor: pointer;
-}
-
-#imgCarrinho {
-    width: 5rem;
     height: auto;
     display: flex;
 }
