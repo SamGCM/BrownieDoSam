@@ -91,13 +91,9 @@ body {
 }
 
 #imgCarrinho {
-    width: 6rem;
+    width: 5rem;
     height: auto;
-}
-
-#imgCarrinhoCheio {
-    width: 6rem;
-    height: auto;
+    display: flex;
 }
 
 
@@ -275,20 +271,26 @@ figure {
     line-height: 2.5rem;
 }
 
-@media(max-width: 523px) {
+@media(max-width: 730px) {
     html {
         font-size: 60.5%;
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 670px) {
     html {
-        font-size: 55.5%;
+        font-size: 52.5%;
     }
 }
 
-@media(max-width: 361px) {
+@media(max-width: 500px) {
     html {
-        font-size: 43.5%;
+        font-size: 48.5%;
+    }
+}
+
+@media(max-width: 400px) {
+    html {
+        font-size: 40.5%;
     }
 }

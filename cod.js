@@ -1,7 +1,5 @@
 //BOTÕES RELACIONADO A COMPRA
 const btnCarrinho = document.querySelector(".btnCarrinho");
-const imgCarrinho = document.querySelector(".imgCarrinho");
-const imgCarrinhoCheio = document.querySelector(".imgCarrinhoCheio");
 const btnComprar = document.querySelectorAll(".btnComprar");
 
 
@@ -22,7 +20,7 @@ const contatos = document.querySelector(".contatos");
 contatos.style.display = "none";
 produtos.style.display = "none";
 foto.style.display = "block";
-imgCarrinhoCheio.style.display = "none";
+
 
 // AÇÕES DOS BOTÔES
 
@@ -30,7 +28,7 @@ btnProdutos.addEventListener('click', abrirProdutos);
 btnInicio.addEventListener('click', abrirInicio);
 btnContatos.addEventListener('click', abrirContatos);
 produto1.addEventListener('click', mostrar);
-btnComprar.addEventListener('click', comprar);
+
 
 
 
