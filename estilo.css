@@ -89,7 +89,8 @@ body {
     width: 90%;
     max-width: 590px;
     margin: auto;
-    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .btnInicio {
@@ -150,8 +151,7 @@ body {
 .slide {
     display: absolute;
     align-items: center;
-    width: 90%;
-    height: 35vh;
+    width: 92.5%;
     max-width: 600px;
     margin: auto;
 }
@@ -194,7 +194,7 @@ body {
     max-width: 700px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
     column-gap: 50px;
     row-gap: 60px;
 }
@@ -265,9 +265,12 @@ figure {
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 515px) {
     html {
         font-size: 48.5%;
+    }
+    .produtos {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
     }
 }
 
