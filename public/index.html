@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="html" lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+    <title>Brownie do Sam</title>
+</head>
+
+<body>
+    <div class="container">
+        <img id="logo" src="fotos/logo.png" alt="logo">
+        <button class="btnInstagram" title="Perfil no Instagram" onclick="window.location.href = 'https://www.instagram.com/brownie_do_sam/'">
+            <img id="imgInsta" src="fotos/instagram_bw.png"
+            onMouseOver="this.src='fotos/instagram_color.png'"
+            onMouseOut="this.src='fotos/instagram_bw.png'"
+            onClick="this.src='fotos/instagram_color.png'"
+        </button>
+        <button class="btnZap" title="Conversar no Whatsapp" onclick="window.location.href='https://api.whatsapp.com/send?phone=5585987119894'">
+            <img id= "imgZap" src="fotos/whatsapp_bw.png"
+            onMouseOver="this.src='fotos/whatsapp_color.png'"
+            onMouseOut="this.src='fotos/whatsapp_bw.png'"
+            onClick="this.src='fotos/whatsapp_color.png'"
+        </button>
+        <button class="btnIfood" title="Visitar perfil no Ifood">
+            <img id="imgIfood" src="fotos/ifood.png" alt="ifood">
+        </button>
+
+    </div>
+    <div class="menu">
+        <button class="btnInicio">INICIO</button>
+        <button class="btnProdutos">NOSSOS PRODUTOS</button>
+        <button class="btnContatos ">CONTATOS</button>
+    </div>
+    <div class="slide">
+        <img class="foto" src="fotos/brownie1.jpg" />
+        <img class="foto" src="fotos/brownie2.jpg" />
+    </div>
+    <div class="produtos">
+        <figure class="containerProduto">
+            <img class="imgProduto" src="fotos/brownie1.jpg">
+            <figcaption>
+                Brownie<br> R$ 5,00<br>
+                <button class="btnComprar" title="Comprar Brownie" onclick="window.location.href='https://pag.ae/7WYPq6Ajm'">
+                    Comprar
+                </button>
+            </figcaption>
+        </figure>
+        <figure class="containerProduto ">
+            <img class="imgProduto " src="fotos/brownie2.jpg ">
+            <figcaption>
+                Brownie 2<br> R$ 14,00 <br>
+                <button class="btnComprar" title="Comprar Brownie">
+                    Comprar
+                </button>
+            </figcaption>
+        </figure>
+        <figure class="containerProduto ">
+            <img class="imgProduto " src="fotos/brownie3.jpg ">
+            <figcaption>
+                Brownie 3<br> R$ 34,00<br>
+                <button class="btnComprar" title="Comprar Brownie">
+                    Comprar
+                </button>
+            </figcaption>
+        </figure>
+        <figure class="containerProduto">
+            <img class="imgProduto " src="fotos/brownie4.jpg ">
+            <figcaption>
+                Brownie 4<br> R$ 25,00<br>
+                <button class="btnComprar" title="Comprar Brownie">
+                    Comprar
+                </button>
+            </figcaption>
+        </figure>
+        <figure class="containerProduto">
+            <img class="imgProduto " src="fotos/brownie5.jpg ">
+            <figcaption>
+                Brownie 5<br> R$ 8,00<br>
+                <button class="btnComprar" title="Comprar Brownie">
+                    Comprar
+                </button>
+            </figcaption>
+        </figure>
+    </div>
+    <div class=contatos>
+        Pontos de venda:
+        <ul>
+            <li class="pontosVenda">Barbearia Kennedy <br>(85) 9999999 <br>
+                <span class="localizacao" title="Ver no mapa">Localização <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.3721433890155!2d-38.57474388588391!3d-3.7287889442170474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74bf4c40f5c57%3A0x510758972eb43a98!2sBarbearia%20Kennedy!5e0!3m2!1spt-BR!2sbr!4v1616111411908!5m2!1spt-BR!2sbr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></span>
+            </li>
+            <li class="pontosVenda ">Loja 2</li>
+            <li class="pontosVenda ">Loja 3</li>
+            <li class="pontosVenda ">Loja 4</li>
+        </ul>
+    </div>
+
+    <script src="/__/firebase/8.2.10/firebase-app.js "></script>
+
+    <script src="/__/firebase/8.2.10/firebase-analytics.js "></script>
+
+
+    </script>
+
+    <script src="/__/firebase/init.js "></script>
+</body>
+<script src=cod.js></script>
+
+</html>

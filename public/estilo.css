@@ -1,0 +1,297 @@
+html {
+    font-family: 'Lato', Ariel, sans-serif;
+    background: #f5f4f4;
+    height: 100%;
+    font-size: 62.5%;
+    /* USEI O FONT-SIZE COMO FORMA DE RESPONSIVIDADE PARA TELAS BEM 
+     MENORES PARA QUE OS ICONES NÃO FICASSEM COLADOS */
+}
+
+body {
+    max-height: 100%;
+    font-size: 1.6rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+}
+
+#logo {
+    width: 15rem;
+    height: auto;
+    display: flex;
+}
+
+.btnInstagram {
+    position: relative;
+    display: flex;
+    padding: 0rem;
+    background: none;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    cursor: pointer;
+}
+
+#imgInsta {
+    width: 5rem;
+    height: auto;
+    display: flex;
+}
+
+.btnZap {
+    position: relative;
+    display: flex;
+    padding: 0rem;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+#imgZap {
+    width: 5rem;
+    height: auto;
+    display: flex;
+}
+
+.btnIfood {
+    position: relative;
+    display: flex;
+    padding: 0rem;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+#imgIfood {
+    width: 6rem;
+    height: auto;
+    display: flex;
+}
+
+
+/* MENU*/
+
+.menu {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 590px;
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.btnInicio {
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    background: none;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: #D1260B;
+    cursor: pointer;
+    margin-left: 5%;
+}
+
+.btnInicio:hover {
+    font-weight: bold;
+}
+
+.btnProdutos {
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    background: none;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: #D1260B;
+    cursor: pointer;
+}
+
+.btnProdutos:hover {
+    font-weight: bold;
+}
+
+.btnContatos {
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    background: none;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: #D1260B;
+    cursor: pointer;
+}
+
+.btnContatos:hover {
+    font-weight: bold;
+}
+
+
+/* SLIDE DE FOTOS*/
+
+.slide {
+    display: absolute;
+    align-items: center;
+    width: 92.5%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.foto {
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    width: 90%;
+    max-width: 630px;
+    max-height: 400px;
+    margin: auto;
+}
+
+@keyframes animacao {
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.foto:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.foto:nth-child(2) {
+    animation-delay: 5s;
+}
+
+
+/* PRODUTOS */
+
+.produtos {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+    column-gap: 50px;
+    row-gap: 60px;
+}
+
+.containerProduto {
+    display: flex;
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+figcaption {
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+figure {
+    display: flex;
+    flex-flow: column;
+    max-width: 220px;
+    margin: auto;
+    border: 0.1px solid rgb(167, 167, 167);
+    border-radius: 20px;
+}
+
+.containerProduto:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0 1em #999999d7;
+}
+
+.btnComprar {
+    position: relative;
+    box-shadow: 0 0 0 0;
+    border: 2px solid #D1260B;
+    border-radius: 10px;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contatos {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    font-weight: bold;
+}
+
+.pontosVenda {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: normal;
+}
+
+.localizacao {
+    color: #D1260B;
+    cursor: pointer;
+}
+
+.localizacao:hover {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mapa {
+    display: none;
+}
+
+@media(max-width: 730px) {
+    html {
+        font-size: 60.5%;
+    }
+}
+
+@media(max-width: 670px) {
+    html {
+        font-size: 52.5%;
+    }
+}
+
+@media(max-width: 515px) {
+    html {
+        font-size: 48.5%;
+    }
+    .produtos {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+    }
+}
+
+@media(max-width: 400px) {
+    html {
+        font-size: 40.5%;
+    }
+}
