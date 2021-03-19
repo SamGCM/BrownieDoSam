@@ -16,10 +16,13 @@ const html = document.querySelector('.html');
 const foto = document.querySelector(".slide");
 const produtos = document.querySelector(".produtos");
 const contatos = document.querySelector(".contatos");
+const localizacao = document.querySelector(".localizacao");
+const mapa = document.querySelector(".mapa");
 
 contatos.style.display = "none";
 produtos.style.display = "none";
 foto.style.display = "block";
+mapa.style.display = "none";
 
 
 // AÇÕES DOS BOTÔES
@@ -27,7 +30,8 @@ foto.style.display = "block";
 btnProdutos.addEventListener('click', abrirProdutos);
 btnInicio.addEventListener('click', abrirInicio);
 btnContatos.addEventListener('click', abrirContatos);
-produto1.addEventListener('click', mostrar);
+localizacao.addEventListener('click', mostrar);
+
 
 
 
@@ -53,4 +57,10 @@ function abrirContatos() {
 function comprar() {
     imgCarrinho.style.display = "none";
     imgCarrinhoCheio.style.display = "block";
+}
+
+function mostrar() {
+    if (mapa.style.display == "none") {
+        mapa.style.display = "block"
+    } else { mapa.style.display = "none" }
 }

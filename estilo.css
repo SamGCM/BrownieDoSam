@@ -246,11 +246,27 @@ figure {
     width: 90%;
     max-width: 400px;
     margin: auto;
+    font-weight: bold;
 }
 
 .pontosVenda {
     font-size: 1.6rem;
     line-height: 2.5rem;
+    font-weight: normal;
+}
+
+.localizacao {
+    color: #D1260B;
+    cursor: pointer;
+}
+
+.localizacao:hover {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mapa {
+    display: none;
 }
 
 @media(max-width: 730px) {
