@@ -1,6 +1,8 @@
 # Site de venda/exposição
 WebApp feito para exposição ou venda de produtos.
 
+Site: https://brownie-sam.web.app/
+
 Tipos:
 A branch MAIN é o site na forma de exposição dos produtos, para influenciar e dar confiança a compra do consumidor da marca ou produto.
 
